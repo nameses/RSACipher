@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "RSACipher (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "RSACipher (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

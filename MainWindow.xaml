@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="RSACipher.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RSACipher"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="RSACipher">
+
+    <Grid Padding="20">
+        <StackPanel Spacing="10">
+            <Button x:Name="GenerateKeysButton" Content="Generate Keys" Click="GenerateKeysButton_Click"/>
+            <TextBlock Text="Public Key:"/>
+            <TextBox x:Name="PublicKeyTextBox" IsReadOnly="True" AcceptsReturn="True"/>
+
+            <TextBlock Text="Private Key:"/>
+            <TextBox x:Name="PrivateKeyTextBox" IsReadOnly="True" AcceptsReturn="True"/>
+
+            <TextBlock Text="Plain Text:"/>
+            <TextBox x:Name="PlainTextTextBox"/>
+
+            <Button x:Name="EncryptButton" Content="Encrypt" Click="EncryptButton_Click"/>
+            <TextBlock Text="Encrypted Text:"/>
+            <TextBox x:Name="EncryptedTextBox" IsReadOnly="True"/>
+
+            <Button x:Name="DecryptButton" Content="Decrypt" Click="DecryptButton_Click"/>
+            <TextBlock Text="Decrypted Text:"/>
+            <TextBox x:Name="DecryptedTextBox" IsReadOnly="True"/>
+        </StackPanel>
+    </Grid>
+</Window>
